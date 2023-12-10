@@ -52,14 +52,17 @@ export const verifyToken = (
   next: NextFunction
 ) => {
   const authHeader = req.headers.authorization;
+
   if (authHeader) {
-    jwt.verify(authHeader, "secret", (error) => {
+    jwt.verify(authHeader, "qwerty", (error) => {
       if (error) {
         return res.sendStatus(403);
       }
 
       next();
     });
+  } else {
+    return res.sendStatus(401);
   }
 };
 
