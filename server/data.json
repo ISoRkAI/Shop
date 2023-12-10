@@ -1,0 +1,182 @@
+[
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396304"
+    },
+    "productName": "AirPods",
+    "price": "99",
+    "description": "Apple AirPods (2nd Generation) Wireless Ear Buds, Bluetooth Headphones with Lightning Charging Case Included, Over 24 Hours of Battery Life, Effortless Setup for iPhone",
+    "stockQuantity": 495,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/417OJaY3DAL._AC_SL1000_.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396306"
+    },
+    "productName": "Apple AirTag",
+    "price": "49",
+    "description": "Keep track of and find your items alongside friends and devices in the Find My app",
+    "stockQuantity": 54,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/713xuNx00oS._AC_SL1500_.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396308"
+    },
+    "productName": "Apple Magic Keyboard",
+    "price": "259",
+    "description": "Apple Magic Keyboard: iPad Keyboard case for iPad Pro 11-inch (1st, 2nd, 3rd, 4th Generation) and iPad Air (4th, 5th Generation), Great Typing Experience, Built-in trackpad, US English - White",
+    "stockQuantity": 10,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81-yAYDzWPS._AC_SL1500_.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396310"
+    },
+    "productName": "Beats Studio Pro",
+    "price": "300",
+    "description": "Beats Studio Pro - Wireless Bluetooth Noise Cancelling Headphones - Personalized Spatial Audio, USB-C Lossless Audio, Apple & Android Compatibility, Up to 40 Hours Battery Life - Black",
+    "stockQuantity": 0,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61u-OaDSfQL._AC_SL1500_.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396312"
+    },
+    "productName": "Apple TV",
+    "price": "149",
+    "description": "Apple 2022 Apple TV 4K Wi‑Fi with 64GB Storage (3rd Generation)",
+    "stockQuantity": 23,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61HGvrbamzL._AC_SL1500_.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396312"
+    },
+    "productName": "Apple Magic Mouse",
+    "price": "89",
+    "description": "Apple Magic Mouse: Wireless, Bluetooth, Rechargeable. Works with Mac or iPad; Multi-Touch Surface - Black",
+    "stockQuantity": 120,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/515ehIbTetL._AC_SL1500_.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396314"
+    },
+    "productName": "Apple Watch Band",
+    "price": "99",
+    "description": "Apple Watch Band - Alpine Loop (49mm) - Orange - Small",
+    "stockQuantity": 495,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71CGia2MTmL._AC_SL1500_.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396316"
+    },
+    "productName": "Charger",
+    "price": "29",
+    "description": "Apple Watch Magnetic Fast Charger to USB-C Cable (1 m)​​​​​​​",
+    "stockQuantity": 1495,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/41e4WpylyoL._AC_SL1000_.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396318"
+    },
+    "productName": "Apple iPad Pro 12.9-inch",
+    "price": "1079",
+    "description": "Apple iPad Pro 12.9-inch (6th Generation): with M2 chip, Liquid Retina XDR Display, 128GB, Wi-Fi 6E, 12MP front/12MP and 10MP Back Cameras, Face ID, All-Day Battery Life – Space Gray",
+    "stockQuantity": 95,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81c+9BOQNWL._AC_SL1500_.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396320"
+    },
+    "productName": "Apple Watch Ultra 2",
+    "price": "749",
+    "description": "Apple Watch Ultra 2 [GPS + Cellular 49mm] Smartwatch with Rugged Titanium Case & Indigo Alpine Loop Medium. Fitness Tracker, Precision GPS, Action Button, Extra-Long Battery Life, Carbon Neutral",
+    "stockQuantity": 0,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81LaeWvEbGL._AC_SL1500_.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396322"
+    },
+    "productName": "MacBook Pro 14.2 (M3)",
+    "price": "1449",
+    "description": "Apple 2023 MacBook Pro Laptop M3 chip with 8‑core CPU, 10‑core GPU: 14.2-inch Liquid Retina XDR Display, 8GB Unified Memory, 512GB SSD Storage. Works with iPhone/iPad; Space Gray",
+    "stockQuantity": 1495,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61lsexTCOhL._AC_SL1500_.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396324"
+    },
+    "productName": "MacBook Pro 16.2 (M3 Pro)",
+    "price": "2300",
+    "description": "Apple 2023 MacBook Pro Laptop M3 Pro chip with 12‑core CPU, 18‑core GPU: 16.2-inch Liquid Retina XDR Display, 18GB Unified Memory, 512GB SSD Storage. Works with iPhone/iPad; Space Black",
+    "stockQuantity": 54,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/618d5bS2lUL._AC_SL1500_.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396326"
+    },
+    "productName": "iMac (24 8-core GPU)",
+    "price": "1299",
+    "description": "Apple 2023 iMac All-in-One Desktop Computer with M3 chip: 8-core CPU, 8-core GPU, 24-inch Retina Display, 8GB Unified Memory, 256GB SSD Storage, Matching Accessories. Works with iPhone/iPad; Blue",
+    "stockQuantity": 195,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81CEGDDOxSL._AC_SL1500_.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396328"
+    },
+    "productName": "Mac Mini",
+    "price": "599",
+    "description": "Apple 2023 Mac Mini Desktop Computer M2 chip with 8‑core CPU and 10‑core GPU, 8GB Unified Memory, 256GB SSD Storage, Gigabit Ethernet. Works with iPhone/iPad",
+    "stockQuantity": 495,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61La8PAa42L._AC_SL1500_.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396330"
+    },
+    "productName": "Mac mini (M2 Pro)",
+    "price": "1299",
+    "description": "Apple 2023 Mac Mini Desktop Computer M2 Pro chip with 10‑core CPU and 16‑core GPU, 16GB Unified Memory, 512GB SSD Storage, Gigabit Ethernet. Works with iPhone/iPad",
+    "stockQuantity": 495,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61La8PAa42L._AC_SL1500_.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396734"
+    },
+    "productName": "Studio Display",
+    "price": "1499",
+    "description": "Apple Studio Display. Standard Glass. Tilt-Adjustable Stand",
+    "stockQuantity": 695,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71I1KXzxHIL._AC_SL1500_.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396034"
+    },
+    "productName": "Apple TV 4K 64GB (3rd Gen)",
+    "price": "149",
+    "description": "Apple 2022 Apple TV 4K Wi‑Fi with 64GB Storage (3rd Generation)",
+    "stockQuantity": 495,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61HGvrbamzL._AC_SL1500_.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "64f678b4239d0c9a12396153"
+    },
+    "productName": "Apple iPhone 15 Pro",
+    "price": "999",
+    "description": "Apple iPhone 15 Pro (128 GB) - Natural Titanium | [Locked] | Boost Infinite plan required starting at $60/mo. | Unlimited Wireless | No trade-in needed to start | Get the latest iPhone every year",
+    "stockQuantity": 495,
+    "imageURL": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81lOtLouS4L._AC_SL1500_.jpg"
+  }
+]
