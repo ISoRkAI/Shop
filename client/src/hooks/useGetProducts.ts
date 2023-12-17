@@ -1,27 +1,17 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { useGetToken } from './useGetToken';
-import { IProduct } from '../models/interfaces';
 
 export const useGetProducts = () => {
-  const [products, setProducts] = useState<IProduct[]>([]);
-  const { headers } = useGetToken();
+  const [products, setProducts] = useState([]);
 
   const fetchProducts = async () => {
-    try {
-      const fetchedProducts = await axios.get('http://localhost:3001/product', {
-        headers,
-      });
-      setProducts(fetchedProducts.data.products);
-    } catch (error) {
-      alert('ERROR: Something went wrong.');
-    }
+    const products = await axios.get('http://localhost:3001/products');
+    setProducts(products.data.products);
   };
 
   useEffect(() => {
     fetchProducts();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return { products };
+  return { products, fetchProducts };
 };

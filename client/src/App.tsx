@@ -1,11 +1,11 @@
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
-import { Navbar } from './components/navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ShopPage } from './pages/shop';
 import { AuthPage } from './pages/auth';
 import { CheckoutPage } from './pages/checkout';
-import { PurchasedItemsPage } from './pages/purchased-items';
 import { ShopContextProvider } from './context/shop-context';
+import { Navbar } from './components/navbar';
+import { PurchasedItemsPage } from './pages/purchased-items';
 
 function App() {
   return (

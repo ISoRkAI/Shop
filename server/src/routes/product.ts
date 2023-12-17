@@ -1,32 +1,28 @@
-import { Router, Request, Response, NextFunction } from "express";
-import { ProductModel } from "../models/product";
-import { verifyToken } from "./user";
-import { UserModel } from "../models/user";
-import { ProductErrors, UserErrors } from "../errors";
+import { Router, Request, Response } from "express";
+import { ProductErrors } from "../common/errors";
 
 const router = Router();
+import { ProductModel } from "../models/product";
+import { UserModel } from "../models/user";
+import { verifyToken } from "./user";
 
-router.get("/", verifyToken, async (_, res: Response) => {
-  try {
-    const products = await ProductModel.find({});
+router.get("/", async (_, res: Response) => {
+  const products = await ProductModel.find({});
 
-    res.json({ products });
-  } catch (error) {
-    res.status(400).json({ error });
-  }
+  res.json({ products });
 });
 
 router.post("/checkout", verifyToken, async (req: Request, res: Response) => {
   const { customerID, cartItems } = req.body;
   try {
-    const user = await UserModel.findById({ customerID });
+    const user = await UserModel.findById(customerID);
+
     const productIDs = Object.keys(cartItems);
-    const products = await ProductModel.find({ id: { $in: productIDs } });
+    const products = await ProductModel.find({ _id: { $in: productIDs } });
 
     if (!user) {
-      return res.status(400).json({ type: UserErrors.NO_USER_FOUND });
+      return res.status(400).json({ type: ProductErrors.NO_USERS_FOUND });
     }
-
     if (products.length !== productIDs.length) {
       return res.status(400).json({ type: ProductErrors.NO_PRODUCT_FOUND });
     }
@@ -34,7 +30,6 @@ router.post("/checkout", verifyToken, async (req: Request, res: Response) => {
     let totalPrice = 0;
     for (const item in cartItems) {
       const product = products.find((product) => String(product._id) === item);
-
       if (!product) {
         return res.status(400).json({ type: ProductErrors.NO_PRODUCT_FOUND });
       }
@@ -47,7 +42,7 @@ router.post("/checkout", verifyToken, async (req: Request, res: Response) => {
     }
 
     if (user.availableMoney < totalPrice) {
-      return res.status(400).json({ type: ProductErrors.NOT_AVAILABLE_MONEY });
+      return res.status(400).json({ type: ProductErrors.NO_AVAILABLE_MONEY });
     }
 
     user.availableMoney -= totalPrice;
@@ -61,8 +56,31 @@ router.post("/checkout", verifyToken, async (req: Request, res: Response) => {
 
     res.json({ purchasedItems: user.purchasedItems });
   } catch (error) {
-    res.status(400).json({ error });
+    console.log(error);
   }
 });
 
-export { router as productRoute };
+router.get(
+  "/purchased-items/:customerID",
+  verifyToken,
+  async (req: Request, res: Response) => {
+    const { customerID } = req.params;
+    try {
+      const user = await UserModel.findById(customerID);
+
+      if (!user) {
+        return res.status(400).json({ type: ProductErrors.NO_USERS_FOUND });
+      }
+
+      const products = await ProductModel.find({
+        _id: { $in: user.purchasedItems },
+      });
+
+      res.json({ purchasedItems: products });
+    } catch (error) {
+      res.status(400).json({ type: ProductErrors.NO_USERS_FOUND });
+    }
+  }
+);
+
+export { router as productRouter };
